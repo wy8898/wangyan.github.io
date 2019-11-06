@@ -7,13 +7,16 @@
   
   
   
-  <title>Name</title>
+  <title>Hexo-GitHub 搭建 | Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Name">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="注册 Github Github下载地址： https:&#x2F;&#x2F;github.com   安装 Nodejs Node.js下载地址： https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download   安装 Git Git下载地址： https:&#x2F;&#x2F;git-scm.com&#x2F;download   安装 Hexo Hexo下载地址： Hexo   1234567891011121314151617&#x2F;&#x2F;安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo-GitHub 搭建">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;01&#x2F;Hexo-GitHub%E6%90%AD%E5%BB%BA&#x2F;index.html">
 <meta property="og:site_name" content="Name">
+<meta property="og:description" content="注册 Github Github下载地址： https:&#x2F;&#x2F;github.com   安装 Nodejs Node.js下载地址： https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download   安装 Git Git下载地址： https:&#x2F;&#x2F;git-scm.com&#x2F;download   安装 Hexo Hexo下载地址： Hexo   1234567891011121314151617&#x2F;&#x2F;安装">
 <meta property="og:locale" content="cn">
+<meta property="og:updated_time" content="2019-11-06T11:27:52.687Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Name" type="application/atom+xml">
@@ -28,9 +31,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -41,8 +41,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -274,297 +274,7 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-测试文章" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" class="article-date">
-      <time datetime="2019-11-02T16:00:00.000Z" itemprop="datePublished">2019-11-03</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">JavaScript 语言中的 this 详解</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="1、涵义"><a href="#1、涵义" class="headerlink" title="1、涵义"></a>1、涵义</h3><p><mark>this</mark> 是属性或方法“当前”所在的对象 </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.name</span><br></pre></td></tr></table></figure>
-
-<p>上面代码中，<mark>this</mark> 就代表 <mark>name</mark> 属性当前所在的对象。<br>下面是一个实际的例子：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> people = &#123;</span><br><span class="line">    name=<span class="string">"wangyan"</span>,</span><br><span class="line">    describe:<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'姓名：'</span> + <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">people.describe()</span><br></pre></td></tr></table></figure>
-<p>上面代码中，<mark>this.name</mark> 表示 <mark>name</mark> 属性所在的那个对象。由于<mark>this.name</mark> 是在 <mark>describe</mark> 方法中调用，而 <mark>describe</mark> 方法所在的对象就是 <mark>people</mark>,因此 <mark>this</mark> 指向 <mark>people</mark>,<mark>this.name</mark> 就是 <mark>people</mark></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Markdown 语法" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/" class="article-date">
-      <time datetime="2019-11-01T16:00:00.000Z" itemprop="datePublished">2019-11-02</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/">Markdown 语法</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题   </span><br><span class="line">## 二级标题   </span><br><span class="line">### 三级标题   </span><br><span class="line">#### 四级标题   </span><br><span class="line">##### 五级标题   </span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-<p><br><br></p>
-<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//段落之间要有空行 </span></span><br><span class="line"></span><br><span class="line">在段落中&lt;br&gt;添加换行</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>换行效果：</code></p>
-<blockquote>
-<p>在段落中<br>添加换行</p>
-</blockquote>
-<p><br><br></p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;引用内容</span><br><span class="line">&gt;&gt;嵌套的引用</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>引用效果：</code></p>
-<blockquote>
-<p>引用内容</p>
-<blockquote>
-<p>嵌套的引用</p>
-</blockquote>
-</blockquote>
-<p><br><br></p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//无序列表（符号+空格）</span></span><br><span class="line">* 无序列表一</span><br><span class="line">+ 无序列表二</span><br><span class="line">- 无序列表三</span><br><span class="line"></span><br><span class="line"><span class="comment">//有序列表（数字+空格）</span></span><br><span class="line"><span class="number">1.</span> 有序列表一  </span><br><span class="line"><span class="number">2.</span> 有序列表二    </span><br><span class="line"><span class="number">3.</span> 有序列表三</span><br><span class="line"></span><br><span class="line"><span class="comment">//嵌套列表</span></span><br><span class="line"><span class="number">1.</span> 嵌套<span class="number">1</span></span><br><span class="line">  + 嵌套<span class="number">1</span><span class="number">-1</span></span><br><span class="line">  + 嵌套<span class="number">1</span><span class="number">-2</span></span><br><span class="line"><span class="number">2.</span> 嵌套<span class="number">2</span></span><br><span class="line">  + 嵌套<span class="number">2</span><span class="number">-1</span></span><br><span class="line">  + 嵌套<span class="number">2</span><span class="number">-2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//任务列表</span></span><br><span class="line">- [x] 表示打勾</span><br><span class="line">- [ ] 表示不打勾</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>无序列表效果：</code></p>
-<blockquote>
-<ul>
-<li>无序列表一</li>
-</ul>
-<ul>
-<li>无序列表二</li>
-</ul>
-<ul>
-<li>无序列表三</li>
-</ul>
-</blockquote>
-<br>
-
-<p><code>有序列表效果：</code></p>
-<blockquote>
-<ol>
-<li>有序列表一  </li>
-<li>有序列表二    </li>
-<li>有序列表三</li>
-</ol>
-</blockquote>
-<br>
-
-<p><code>嵌套列表效果：</code></p>
-<blockquote>
-<ol>
-<li>嵌套1<ul>
-<li>嵌套1-1</li>
-<li>嵌套1-2</li>
-</ul>
-</li>
-<li>嵌套2<ul>
-<li>嵌套2-1</li>
-<li>嵌套2-2</li>
-</ul>
-</li>
-</ol>
-</blockquote>
-<br>
-
-<p><code>任务列表效果：</code></p>
-<blockquote>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 表示打勾</li>
-<li><input disabled="" type="checkbox"> 表示不打勾 </li>
-</ul>
-</blockquote>
-<p><br><br></p>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| th1 | th2 | th3 |     <span class="comment">//表头</span></span><br><span class="line">| --- | --- | --- |     <span class="comment">//对齐 左对齐 :--    |   居中 :--:   |  右对齐  --:</span></span><br><span class="line">| td1 | td1 | td1 |     <span class="comment">//最左最右 | 可以省略</span></span><br><span class="line">| td2 | td2 | td2 |</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>任务列表效果：</code></p>
-<table>
-<thead>
-<tr>
-<th>th1</th>
-<th>th2</th>
-<th>th3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>td1</td>
-<td>td1</td>
-<td>td1</td>
-</tr>
-<tr>
-<td>td2</td>
-<td>td2</td>
-<td>td2</td>
-</tr>
-</tbody></table>
-<p><br><br></p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//行内</span></span><br><span class="line">这是一个<span class="string">`行内`</span>高亮代码</span><br><span class="line"></span><br><span class="line"><span class="comment">//四个空格</span></span><br><span class="line">    text = <span class="string">"Hello, world!"</span></span><br><span class="line">    print text</span><br><span class="line"></span><br><span class="line"><span class="comment">//三个`</span></span><br><span class="line"><span class="string">``</span><span class="string">`text</span></span><br><span class="line"><span class="string">text = "Hello, world!"</span></span><br><span class="line"><span class="string">print text</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>行效果：</code><br>这是一个<code>行内</code>高亮代码<br><br></p>
-<p><code>块效果：</code></p>
-<pre><code>var text = Hello, world!
-function(){
-    console.log(text);
-}</code></pre><p><br><br></p>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line">------</span><br><span class="line">___</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>效果：</code></p>
-<hr>
-<hr>
-<hr>
-<p><br><br></p>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自动链接</span></span><br><span class="line">http:<span class="comment">//www.google.com/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//普通链接</span></span><br><span class="line">[Google](http:<span class="comment">//www.google.com/ "google")</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//本地链接</span></span><br><span class="line">[logo.svg](./logo.svg)</span><br><span class="line"></span><br><span class="line"><span class="comment">//参考式链接</span></span><br><span class="line">[Google][]</span><br><span class="line"></span><br><span class="line">[Google]: http:<span class="comment">//www.google.com/ "google"</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>效果：</code></p>
-<blockquote>
-<p>自动链接 <a href="http://www.google.com/" target="_blank" rel="noopener">http://www.google.com/</a><br>普通链接 <a href="http://www.google.com/" target="_blank" rel="noopener" title="google">Google</a><br>本地链接 <a href="./logo.svg">logo.svg</a><br>参考式链接 <a href="http://www.google.com/" target="_blank" rel="noopener" title="google">Google</a></p>
-</blockquote>
-<p><br><br></p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//行内式</span></span><br><span class="line">![ImgTitle](https:<span class="comment">//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&amp;s "GitHub,Social Coding")</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//参考式</span></span><br><span class="line">![ImgTitle][]</span><br><span class="line"></span><br><span class="line">[ImgTitle]: https:<span class="comment">//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&amp;s "GitHub,Social Coding"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//&lt;img /&gt;标签</span></span><br><span class="line">&lt;img src=<span class="string">"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&amp;s"</span> alt=<span class="string">"ImgTitle"</span> title=<span class="string">"ImgTitle"</span>  /&gt;</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>效果：</code></p>
-<blockquote>
-<p>行内式 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&s" alt="ImgTitle" title="GitHub,Social Coding"></p>
-</blockquote>
-<blockquote>
-<p>参考式 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&s" alt="ImgTitle" title="GitHub,Social Coding"></p>
-</blockquote>
-<blockquote>
-<p>img标签 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&s" alt="ImgTitle" title="ImgTitle"  /></p>
-</blockquote>
-<p><br><br></p>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  * 和 _  斜体</span></span><br><span class="line">Hello, *Hello*, _Hello_!</span><br><span class="line"></span><br><span class="line"><span class="comment">//  ** 和 __  粗体</span></span><br><span class="line">Hello, **Hello**, __Hello__!</span><br><span class="line"></span><br><span class="line"><span class="comment">//  *** 和 ___  粗体</span></span><br><span class="line">Hello, ***Hello***, ___Hello___!</span><br><span class="line"></span><br><span class="line"><span class="comment">//  ~~ 删除线</span></span><br><span class="line">Hello, ~~Hello, Hello~~!</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>效果：</code></p>
-<blockquote>
-<p>Hello, <em>Hello</em>, <em>Hello</em>!<br>Hello, <strong>Hello</strong>, <strong>Hello</strong>!<br>Hello, <strong><em>Hello</em></strong>, <strong><em>Hello</em></strong>!<br>Hello, <del>Hello, Hello</del>!</p>
-</blockquote>
-<p><br><br></p>
-<h2 id="字符转义"><a href="#字符转义" class="headerlink" title="字符转义"></a>字符转义</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Hello, \*Hello\*, \_Hello\_!</span><br><span class="line"></span><br><span class="line">&amp;lt;code&amp;gt;Hello, world!&amp;lt;<span class="regexp">/code&amp;gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">\&lt;text&gt;Hello, world!\&lt;/</span>text&gt;</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>效果：</code></p>
-<blockquote>
-<p>Hello, *Hello*, _Hello_!</p>
-</blockquote>
-<blockquote>
-<p>&lt;code&gt;Hello, world!&lt;/code&gt;</p>
-</blockquote>
-<blockquote>
-<p>&lt;text&gt;Hello, world!&lt;/text&gt;</p>
-</blockquote>
-<p><br><br></p>
-<h2 id="高亮"><a href="#高亮" class="headerlink" title="高亮"></a>高亮</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">``</span><span class="string">`</span></span><br><span class="line"><span class="string">&lt;p&gt;Hello, world!&lt;/p&gt;</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span></span><br><span class="line"></span><br><span class="line"><span class="string">`Hello, world!`</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p><code>效果：</code></p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Hello, world!&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p><code>Hello, world!</code></p>
-</blockquote>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Hexo-GitHub搭建" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Hexo-GitHub搭建" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a  href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/" class="article-date">
@@ -581,13 +291,20 @@ function(){
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/">Hexo-GitHub 搭建</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo-GitHub 搭建
     </h1>
   
 
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -640,31 +357,157 @@ function(){
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a  href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/">Hexo-GitHub 搭建</a></p>
+        <p><span>文章作者:</span><a  href="/" title="访问 Name 的个人博客">Name</a></p>
+        <p><span>发布时间:</span>2019年11月01日 - 00时00分</p>
+        <p><span>最后更新:</span>2019年11月06日 - 19时27分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/" title="Hexo-GitHub 搭建">http://yoursite.com/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/　　作者: Name" title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a  href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Markdown 语法
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#注册-Github"><span class="toc-number">1.</span> <span class="toc-text">注册 Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-Nodejs"><span class="toc-number">2.</span> <span class="toc-text">安装 Nodejs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-Git"><span class="toc-number">3.</span> <span class="toc-text">安装 Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-Hexo"><span class="toc-number">4.</span> <span class="toc-text">安装 Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连接-Github"><span class="toc-number">5.</span> <span class="toc-text">连接 Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发布文章"><span class="toc-number">6.</span> <span class="toc-text">发布文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更换主题"><span class="toc-number">7.</span> <span class="toc-text">更换主题</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
 
+    
+        <section class="changyan" id="comments">
+  <!--<div id="uyan_frame"></div>-->
+  <div id="SOHUCS"></div>
+  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+  <script type="text/javascript">
+    window.changyan.api.config({
+      appid: 'xxxx',
+      conf: 'xxxxxxxxx'
+    });
+  </script>
+</section>
+    
 
 
-  
-  
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a  href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/" title="上一篇: Markdown 语法">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">JavaScript 语言中的 this 详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/">Markdown 语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/">Hexo-GitHub 搭建</a></li></ul>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">

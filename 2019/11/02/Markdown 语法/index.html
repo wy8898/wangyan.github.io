@@ -7,14 +7,21 @@
   
   
   
-  <title>Name</title>
+  <title>Markdown 语法 | Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Name">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="标题123456# 一级标题   ## 二级标题   ### 三级标题   #### 四级标题   ##### 五级标题   ###### 六级标题  段落123&#x2F;&#x2F;段落之间要有空行 在段落中&amp;lt;br&amp;gt;添加换行   换行效果：  在段落中添加换行   引用12&amp;gt;引用内容&amp;gt;&amp;gt;嵌套的引用   引用效果：  引用内容  嵌套的引用    列表12345678910111213">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 语法">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;02&#x2F;Markdown%20%E8%AF%AD%E6%B3%95&#x2F;index.html">
 <meta property="og:site_name" content="Name">
+<meta property="og:description" content="标题123456# 一级标题   ## 二级标题   ### 三级标题   #### 四级标题   ##### 五级标题   ###### 六级标题  段落123&#x2F;&#x2F;段落之间要有空行 在段落中&amp;lt;br&amp;gt;添加换行   换行效果：  在段落中添加换行   引用12&amp;gt;引用内容&amp;gt;&amp;gt;嵌套的引用   引用效果：  引用内容  嵌套的引用    列表12345678910111213">
 <meta property="og:locale" content="cn">
+<meta property="og:image" content="https:&#x2F;&#x2F;encrypted-tbn0.gstatic.com&#x2F;images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&amp;s">
+<meta property="og:image" content="https:&#x2F;&#x2F;encrypted-tbn0.gstatic.com&#x2F;images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&amp;s">
+<meta property="og:image" content="https:&#x2F;&#x2F;encrypted-tbn0.gstatic.com&#x2F;images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&amp;s">
+<meta property="og:updated_time" content="2019-11-06T07:33:56.485Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;encrypted-tbn0.gstatic.com&#x2F;images?q=tbn:ANd9GcS8yYfVLBtiheKzo9f3x3NjM_xUgJvepjxVElc64h-2smbTmD4fDw&amp;s">
   
     <link rel="alternative" href="/atom.xml" title="Name" type="application/atom+xml">
   
@@ -28,9 +35,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -41,8 +45,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -274,72 +278,7 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-测试文章" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" class="article-date">
-      <time datetime="2019-11-02T16:00:00.000Z" itemprop="datePublished">2019-11-03</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">JavaScript 语言中的 this 详解</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="1、涵义"><a href="#1、涵义" class="headerlink" title="1、涵义"></a>1、涵义</h3><p><mark>this</mark> 是属性或方法“当前”所在的对象 </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.name</span><br></pre></td></tr></table></figure>
-
-<p>上面代码中，<mark>this</mark> 就代表 <mark>name</mark> 属性当前所在的对象。<br>下面是一个实际的例子：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> people = &#123;</span><br><span class="line">    name=<span class="string">"wangyan"</span>,</span><br><span class="line">    describe:<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'姓名：'</span> + <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">people.describe()</span><br></pre></td></tr></table></figure>
-<p>上面代码中，<mark>this.name</mark> 表示 <mark>name</mark> 属性所在的那个对象。由于<mark>this.name</mark> 是在 <mark>describe</mark> 方法中调用，而 <mark>describe</mark> 方法所在的对象就是 <mark>people</mark>,因此 <mark>this</mark> 指向 <mark>people</mark>,<mark>this.name</mark> 就是 <mark>people</mark></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Markdown 语法" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Markdown 语法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a  href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/" class="article-date">
@@ -356,13 +295,20 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/">Markdown 语法</a>
+    <h1 class="article-title" itemprop="name">
+      Markdown 语法
     </h1>
   
 
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -540,131 +486,164 @@ function(){
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Hexo-GitHub搭建" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/" class="article-date">
-      <time datetime="2019-10-31T16:00:00.000Z" itemprop="datePublished">2019-11-01</time>
-</a>
-
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a  href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/">Markdown 语法</a></p>
+        <p><span>文章作者:</span><a  href="/" title="访问 Name 的个人博客">Name</a></p>
+        <p><span>发布时间:</span>2019年11月02日 - 00时00分</p>
+        <p><span>最后更新:</span>2019年11月06日 - 15时33分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/" title="Markdown 语法">http://yoursite.com/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/　　作者: Name" title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
+
+
+
+<nav id="article-nav">
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+    <a  href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
+          JavaScript 语言中的 this 详解
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/">Hexo-GitHub 搭建</a>
-    </h1>
   
+    <a  href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo-GitHub 搭建</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="注册-Github"><a href="#注册-Github" class="headerlink" title="注册 Github"></a>注册 Github</h3><blockquote>
-<p>Github下载地址： <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></p>
-</blockquote>
-<p><br><br></p>
-<h3 id="安装-Nodejs"><a href="#安装-Nodejs" class="headerlink" title="安装 Nodejs"></a>安装 Nodejs</h3><blockquote>
-<p>Node.js下载地址： <a href="https://nodejs.org/en/download" target="_blank" rel="noopener">https://nodejs.org/en/download</a></p>
-</blockquote>
-<p><br><br></p>
-<h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><blockquote>
-<p>Git下载地址： <a href="https://git-scm.com/download" target="_blank" rel="noopener">https://git-scm.com/download</a></p>
-</blockquote>
-<p><br><br></p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><blockquote>
-<p>Hexo下载地址： <a href="https://hexo.io/zh-cn" target="_blank" rel="noopener" title="Hexo">Hexo</a> </p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//安装</span></span><br><span class="line">$ npm i hexo-cli -g</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化(MyBlog是您要创建的文件名)</span></span><br><span class="line">$ hexo init MyBlog</span><br><span class="line"></span><br><span class="line"><span class="comment">//安装组件</span></span><br><span class="line">$ npm install</span><br><span class="line"></span><br><span class="line"><span class="comment">//打开本地服务器</span></span><br><span class="line">$ hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment">//地址</span></span><br><span class="line">http:<span class="comment">//localhost:4000/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//关闭本地服务器</span></span><br><span class="line">$ ctrl+c</span><br></pre></td></tr></table></figure>
-
-<p><br><br></p>
-<h3 id="连接-Github"><a href="#连接-Github" class="headerlink" title="连接 Github"></a>连接 Github</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置用户名和邮箱</span></span><br><span class="line">$ git config --global user.name <span class="string">"wy8898"</span></span><br><span class="line"></span><br><span class="line">$ git config --global user.email <span class="string">"13753068898@163.com"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//生成密钥SSH key</span></span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"13753068898@163.com"</span></span><br><span class="line"></span><br><span class="line">$ cat ~<span class="regexp">/.ssh/i</span>d_rsa.pub</span><br><span class="line"><span class="comment">//👆复制输出内容key</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p> 步骤： <code>打开Github</code> ==&gt; <code>settings</code> ==&gt; <code>SSH and GPG keys</code>  ==&gt; <code>新建SSH,名字随便</code>  ==&gt; <code>粘贴key</code>  ==&gt; <code>保存</code></p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试SSH连接</span></span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line"></span><br><span class="line"><span class="comment">//👇成功</span></span><br><span class="line"><span class="comment">//Hi wy8898! You've successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>打开 <code>MyBlog</code> 文件根目录 <code>_config.yml</code></p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//修改配置：</span></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  <span class="comment">//你的项目地址👇</span></span><br><span class="line">  repository: https:<span class="comment">//github.com/wy8898/wy8898.github.io</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<p><br><br></p>
-<h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><blockquote>
-<p>在 <code>MyBlog\source\_posts</code> 下创建 <code>.md</code>, 编写 <code>md</code> 文件</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//生成静态网页</span></span><br><span class="line">$ hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment">//本地预览</span></span><br><span class="line">$ hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment">//上传到 Github</span></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<p><br><br></p>
-<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><blockquote>
-<p>Hexo主题官网地址： <a href="https://hexo.io/themes" target="_blank" rel="noopener">https://hexo.io/themes</a></p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https:<span class="comment">//github.com/theme-next/hexo-theme-next themes/next</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>修改 <code>_config.yml</code> 中的 <code>theme: next</code></p>
-</blockquote>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#标题"><span class="toc-number">1.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#段落"><span class="toc-number">2.</span> <span class="toc-text">段落</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">3.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表"><span class="toc-number">4.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格"><span class="toc-number">5.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">6.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分割线"><span class="toc-number">7.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#超链接"><span class="toc-number">8.</span> <span class="toc-text">超链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-number">9.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体"><span class="toc-number">10.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符转义"><span class="toc-number">11.</span> <span class="toc-text">字符转义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高亮"><span class="toc-number">12.</span> <span class="toc-text">高亮</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
 
+    
+        <section class="changyan" id="comments">
+  <!--<div id="uyan_frame"></div>-->
+  <div id="SOHUCS"></div>
+  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+  <script type="text/javascript">
+    window.changyan.api.config({
+      appid: 'xxxx',
+      conf: 'xxxxxxxxx'
+    });
+  </script>
+</section>
+    
 
 
-  
-  
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a  href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="上一篇: JavaScript 语言中的 this 详解">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a  href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/" title="下一篇: Hexo-GitHub 搭建">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/11/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">JavaScript 语言中的 this 详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/02/Markdown%20%E8%AF%AD%E6%B3%95/">Markdown 语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/01/Hexo-GitHub%E6%90%AD%E5%BB%BA/">Hexo-GitHub 搭建</a></li></ul>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">

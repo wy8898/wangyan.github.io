@@ -9,15 +9,15 @@
   
   <title>构造函数和原型 | WY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="构造函数">
+  <meta name="description" content="创建对象利用new关键字创建1var obj1 = new Object()">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="构造函数和原型">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;06&#x2F;08&#x2F;%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%8E%9F%E5%9E%8B&#x2F;index.html">
 <meta property="og:site_name" content="WY">
-<meta property="og:description" content="构造函数">
+<meta property="og:description" content="创建对象利用new关键字创建1var obj1 = new Object()">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-18T12:19:53.229Z">
+<meta property="og:updated_time" content="2019-11-19T09:37:17.263Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="WY" type="application/atom+xml">
@@ -171,9 +171,9 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl github"  target="_blank" href="/xxxxx" title="github">github</a>
+                                <a class="fl github"  target="_blank" href="https://github.com/wy8898" title="github">github</a>
                             
-                                <a class="fl weibo"  target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
+                                <a class="fl weibo"  target="_blank" href="https://weibo.com/u/5543585649" title="weibo">weibo</a>
                             
                                 <a class="fl rss"  target="_blank" href="/atom.xml" title="rss">rss</a>
                             
@@ -233,9 +233,9 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="github" target="_blank" href="/xxxxx" title="github">github</a>
+                        <a class="github" target="_blank" href="https://github.com/wy8898" title="github">github</a>
                     
-                        <a class="weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
+                        <a class="weibo" target="_blank" href="https://weibo.com/u/5543585649" title="weibo">weibo</a>
                     
                         <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
                     
@@ -284,8 +284,73 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><a id="more"></a>
+        <h2 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h2><h3 id="利用new关键字创建"><a href="#利用new关键字创建" class="headerlink" title="利用new关键字创建"></a>利用new关键字创建</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj1 = <span class="keyword">new</span> <span class="built_in">Object</span>()</span><br></pre></td></tr></table></figure>
+<br>
+<a id="more"></a>
 
+<h3 id="利用对象字面量创建"><a href="#利用对象字面量创建" class="headerlink" title="利用对象字面量创建"></a>利用对象字面量创建</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj2 = &#123;&#125;</span><br></pre></td></tr></table></figure>
+<br>
+
+<h3 id="利用构造函数创建"><a href="#利用构造函数创建" class="headerlink" title="利用构造函数创建"></a>利用构造函数创建</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Star</span>(<span class="params">uname,age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.uname = uname;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">  <span class="keyword">this</span>.sing = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我会唱歌"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> zyx = <span class="keyword">new</span> Star(<span class="string">"张艺兴"</span>,<span class="number">28</span>);</span><br><span class="line">zyx.sing();</span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><blockquote>
+<p>1、构造函数用于创建某一类对象，其<code>首字母要大写</code><br>2、构造函数要和<code>new</code>一起使用才有意义</p>
+</blockquote>
+<br>
+
+<h2 id="new-执行"><a href="#new-执行" class="headerlink" title="new 执行"></a>new 执行</h2><blockquote>
+<p>1、在内存中创建一个新的空对象<br>2、让 this 指向这个新的对象<br>3、执行构造函数里面的代码，给这个新对象添加属性和方法<br>4、返回这个新对象（所以构造函数里面不需要 return ）</p>
+</blockquote>
+<br>
+
+<h2 id="成员"><a href="#成员" class="headerlink" title="成员"></a>成员</h2><h3 id="实例成员"><a href="#实例成员" class="headerlink" title="实例成员"></a>实例成员</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Star</span>(<span class="params">uname,age</span>) </span>&#123;       <span class="comment">//uname、age、sing都是实例成员</span></span><br><span class="line">  <span class="keyword">this</span>.uname = uname;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">  <span class="keyword">this</span>.sing = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我会唱歌"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> zyx = <span class="keyword">new</span> Star(<span class="string">"张艺兴"</span>,<span class="number">28</span>);</span><br><span class="line"><span class="built_in">console</span>.log(zyx.uname)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实例成员：在构造函数内部创建的成员称为<code>实例成员</code>，只能由实例化的对象<code>zyx</code>来访问</p>
+</blockquote>
+<br>
+
+<h3 id="静态成员"><a href="#静态成员" class="headerlink" title="静态成员"></a>静态成员</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Star</span>(<span class="params">uname,age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.uname = uname;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">  <span class="keyword">this</span>.sing = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我会唱歌"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Star.sex = <span class="string">"男"</span>;</span><br><span class="line"><span class="built_in">console</span>.log(Star.sex)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>静态成员：在构造函数本身上添加的成员成为<code>静态成员</code>，<code>只能由构造函数本身来访问</code></p>
+</blockquote>
+<p><br><br></p>
+<h2 id="构造函数原型"><a href="#构造函数原型" class="headerlink" title="构造函数原型"></a>构造函数原型</h2><blockquote>
+<p>1、原型是什么？<br>一个对象，我们也称为 prototype 为<code>原型对象</code><br><br>2、原型的主要作用是什么？<br>主要作用是<code>共享方法</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Star</span>(<span class="params">uname,age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.uname = uname;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line">Star.prototype.sing = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">"我会唱歌"</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> zyx = <span class="keyword">new</span> Star(<span class="string">"张艺兴"</span>,<span class="number">28</span>);</span><br><span class="line"><span class="keyword">var</span> xmy = <span class="keyword">new</span> Star(<span class="string">"小绵羊"</span>,<span class="number">28</span>);</span><br><span class="line"></span><br><span class="line">zyx.sing()</span><br><span class="line">xmy.sing()</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>每一个构造函数都有一个 <code>prototype</code> 属性<br>可以把不变的方法，直接定义在 prototype 对象上，所有对象实例就可以<code>共享</code>这个方法</p>
+</blockquote>
+<p><br><br></p>
+<h2 id="对象原型"><a href="#对象原型" class="headerlink" title="对象原型"></a>对象原型</h2><blockquote>
+<p><code>__proto__</code> 指向构造函数的原型对象 <code>prototype</code><br><code>__proto__</code> 对象原型和原型对象 <code>prototype</code> 是<code>等价的</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Star</span>(<span class="params">uname,age</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.uname = uname;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">    <span class="comment">// this.sing = function() &#123;</span></span><br><span class="line">    <span class="comment">//     console.log("我会唱歌");</span></span><br><span class="line">    <span class="comment">// &#125;;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Star.prototype.sing = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"我会唱歌"</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> zyx = <span class="keyword">new</span> Star(<span class="string">"张艺兴"</span>,<span class="number">28</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(zyx.__proto__ === Star.prototype)           <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<blockquote>
+<p>方法的查找规则:<br>zyx 对象是否有 sing 方法<br>如果有，执行这个对象的 sing<br>如果没有，因为<code>__proto__</code>存在，所以去构造函数原型对象 <code>prototype</code> 查找 sing 方法</p>
+</blockquote>
+<br>
+
+<blockquote>
+<p>利用 <code>constructor</code> 这个属性指回原来的构造函数</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Star</span>(<span class="params">uname,age</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.uname = uname;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">    <span class="comment">// this.sing = function() &#123;</span></span><br><span class="line">    <span class="comment">//     console.log("我会唱歌");</span></span><br><span class="line">    <span class="comment">// &#125;;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Star.prototype.sing = function() &#123;</span></span><br><span class="line"><span class="comment">//     console.log("我会唱歌");</span></span><br><span class="line"><span class="comment">// &#125;;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Star.prototype.dance = function() &#123;</span></span><br><span class="line"><span class="comment">//     console.log("我会跳舞");</span></span><br><span class="line"><span class="comment">// &#125;;</span></span><br><span class="line"></span><br><span class="line">Star.prototype = &#123;</span><br><span class="line">    <span class="keyword">constructor</span>:Star,</span><br><span class="line">    sing:function () &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"我会唱歌"</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    dance:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"我会跳舞"</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> zyx = <span class="keyword">new</span> Star(<span class="string">"张艺兴"</span>,<span class="number">28</span>);</span><br><span class="line"><span class="built_in">console</span>.log(zyx)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(Star.prototype)</span><br><span class="line"><span class="built_in">console</span>.log(zyx.__proto__)</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<pre><code>Star(构造函数)  ——————  prototype(原型)   ——————  sing(方法)
+
+Star(构造函数)  ——————  prototype(原型)   ——————  constructor   ——————  Star(构造函数)
+
+Star(构造函数)  ——————  zyx(实例对象)  ——————  __proto__(原型)   ——————  sing(方法)
+
+Star(构造函数)  ——————  zyx(实例对象)  ——————  __proto__(原型)   ——————  constructor   ——————  Star(构造函数)</code></pre>
       
     </div>
     
@@ -326,7 +391,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#构造函数"><span class="toc-number">1.</span> <span class="toc-text">构造函数</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建对象"><span class="toc-number">1.</span> <span class="toc-text">创建对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#利用new关键字创建"><span class="toc-number">1.1.</span> <span class="toc-text">利用new关键字创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用对象字面量创建"><span class="toc-number">1.2.</span> <span class="toc-text">利用对象字面量创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用构造函数创建"><span class="toc-number">1.3.</span> <span class="toc-text">利用构造函数创建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意"><span class="toc-number">2.</span> <span class="toc-text">注意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-执行"><span class="toc-number">3.</span> <span class="toc-text">new 执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#成员"><span class="toc-number">4.</span> <span class="toc-text">成员</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#实例成员"><span class="toc-number">4.1.</span> <span class="toc-text">实例成员</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#静态成员"><span class="toc-number">4.2.</span> <span class="toc-text">静态成员</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构造函数原型"><span class="toc-number">5.</span> <span class="toc-text">构造函数原型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象原型"><span class="toc-number">6.</span> <span class="toc-text">对象原型</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {

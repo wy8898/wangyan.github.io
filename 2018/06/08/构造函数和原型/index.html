@@ -7,18 +7,20 @@
   
   
   
-  <title>构造函数和原型 | Name</title>
+  <title>构造函数和原型 | WY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="JavaScript">
+  <meta name="description" content="构造函数">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="构造函数和原型">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;06&#x2F;08&#x2F;%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%8E%9F%E5%9E%8B&#x2F;index.html">
-<meta property="og:site_name" content="Name">
+<meta property="og:site_name" content="WY">
+<meta property="og:description" content="构造函数">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-18T07:56:54.100Z">
+<meta property="og:updated_time" content="2019-11-18T12:19:53.229Z">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Name" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="WY" type="application/atom+xml">
   
   
     <link rel="icon" href="/img/favicon.png">
@@ -64,7 +66,7 @@
             
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">Name</a></h1>
+          <h1 class="header-author"><a href="/">WY</a></h1>
         </hgroup>
         
         <p class="header-subtitle">个人主页</p>
@@ -203,7 +205,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Name</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">WY</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -213,7 +215,7 @@
                 
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">Name</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">WY</a></h1>
             </hgroup>
             
             <p class="header-subtitle">个人主页</p>
@@ -282,7 +284,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><a id="more"></a>
+
       
     </div>
     
@@ -291,12 +294,14 @@
     
     <div class="copyright">
         <p><span>本文标题:</span><a  href="/2018/06/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%8E%9F%E5%9E%8B/">构造函数和原型</a></p>
-        <p><span>文章作者:</span><a  href="/" title="访问 Name 的个人博客">Name</a></p>
+        <p><span>文章作者:</span><a  href="/" title="访问 WY 的个人博客">WY</a></p>
         <p><span>发布时间:</span>2018年06月08日 - 20时43分</p>
-        <p><span>最后更新:</span>2019年11月18日 - 15时56分</p>
+<!--        <p><span>最后更新:</span>-->
+<!--                post.updated.format("YYYY年MM月DD日 - HH时mm分") -->
+<!--        </p>-->
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/06/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%8E%9F%E5%9E%8B/" title="构造函数和原型">http://yoursite.com/2018/06/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%8E%9F%E5%9E%8B/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/06/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%8E%9F%E5%9E%8B/　　作者: Name" title=""></span>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/06/08/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E5%8E%9F%E5%9E%8B/　　作者: WY" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -321,7 +326,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#构造函数"><span class="toc-number">1.</span> <span class="toc-text">构造函数</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -439,7 +444,7 @@
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
-                &copy; 2019 Name
+                &copy; 2019 WY
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank">Hexo &nbsp;&nbsp;</a><a href="https://github.com/maochunguang" target="_blank">Blog</a> by tommy
@@ -524,6 +529,7 @@ ga('send', 'pageview');
         };
     })
 </script>
+
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
